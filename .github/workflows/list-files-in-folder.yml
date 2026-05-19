@@ -13,6 +13,6 @@ jobs:
         with:
           credentials: ${{ secrets.GSA_CREDENTIALS }}
           actionType: list
-          googleFolderId: 
+          googleFolderId: 1Z2JWpEG0NGkBwKINUGAc7CbrSG8jtHiR
       - name: Print folder files
         run: echo "${{ steps.list.outputs.folderFiles }}"
