@@ -1,0 +1,17 @@
+name: Delete from Drive
+on:
+  push:
+    branches:
+      - master
+jobs:
+  delete:
+    runs-on: ubuntu-latest
+
+
+    steps:
+      - name: Delete file from Google Drive
+        uses: hworr93/upload-to-drive@master
+        with:
+          credentials: ${{ secrets.GSA_CREDENTIALS }}
+          actionType: delete
+          googleFileId: 1Z2JWpEG0NGkBwKINUGAc7CbrSG8jtHiR
